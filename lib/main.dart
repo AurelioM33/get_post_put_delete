@@ -31,7 +31,7 @@ Future<Post> fetchPost() async {
   final uri = Uri.parse("https://jsonplaceholder.typicode.com/posts/1");
   final response = await http.get(uri);
 
-  if (response.statusCode == 200) {
+  if (response.statusCode == 201) {
     return Post.fromjson(
       json.decode(response.body),
     );
@@ -68,7 +68,7 @@ Future<void> updatePost(int id, String title, String body) async {
   final uri = Uri.parse("https://jsonplaceholder.typicode.com/posts/$postId");
   final response = await http.put(uri, body: json);
 
-  if (response.statusCode == 200) {
+  if (response.statusCode == 201) {
     print("Atualizado com sucesso");
   } else {
     throw Exception('Falha ao carregar o post');
@@ -81,7 +81,7 @@ Future<void> deletePost(int id) async {
   final uri = Uri.parse("https://jsonplaceholder.typicode.com/posts/${id}");
   final response = await http.delete(uri);
 
-  if (response.statusCode == 200) {
+  if (response.statusCode == 201) {
     print("Apagado com sucesso");
   } else {
     throw Exception('Falha ao carregar o post');
