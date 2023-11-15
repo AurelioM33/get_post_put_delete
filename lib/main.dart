@@ -131,7 +131,7 @@ class _HomeWidgetState extends State<HomeWidget> {
           ),
         ),
         body: SizedBox(
-          height: 500,
+          height: 550,
           width: double.infinity,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
