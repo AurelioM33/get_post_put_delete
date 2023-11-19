@@ -150,14 +150,14 @@ class _HomeWidgetState extends State<HomeWidget> {
                 },
               ),
               SizedBox(
-                width: 220,
+                width: 200,
                 child: ElevatedButton(
                   onPressed: () => clickGetButton(),
                   child: const Text("GET"),
                 ),
               ),
               SizedBox(
-                width: 220,
+                width: 200,
                 child: ElevatedButton(
                   onPressed: () => clickPostButton(),
                   child: const Text("POST"),
@@ -188,13 +188,13 @@ Widget buildDataWidget(context, snapshot) => Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Padding(
-          padding: const EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(14.0),
           child: Text(
             snapshot.data.title,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(9.0),
           child: Text(
             snapshot.data.description,
           ),
