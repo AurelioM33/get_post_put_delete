@@ -150,14 +150,14 @@ class _HomeWidgetState extends State<HomeWidget> {
                 },
               ),
               SizedBox(
-                width: 200,
+                width: 220,
                 child: ElevatedButton(
                   onPressed: () => clickGetButton(),
                   child: const Text("GET"),
                 ),
               ),
               SizedBox(
-                width: 200,
+                width: 220,
                 child: ElevatedButton(
                   onPressed: () => clickPostButton(),
                   child: const Text("POST"),
